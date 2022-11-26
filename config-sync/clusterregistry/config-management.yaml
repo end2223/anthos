@@ -1,35 +1,35 @@
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: anthos-on-eks
+  name: gke-cluster
   labels:
-    environment: dr
-    location: ap-southeast-1
+    environment: cloud
+    location: asia-east1-a
 ---
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: anthos-on-eks
+  name: gke-cluster
 spec:
   selector:
     matchLabels:
-      environment: dr
-      location: ap-southeast-1
+      environment: cloud
+      location: asia-east1-a
 ---
 kind: Cluster
 apiVersion: clusterregistry.k8s.io/v1alpha1
 metadata:
-  name: anthos-on-gcp-1
+  name: onpremise-cluster
   labels:
-    environment: dc
-    location: asia-southeast1
+    environment: onpremise
+    location: cloudaz
 ---
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: anthos-on-gcp
+  name: onpremise-cluster
 spec:
   selector:
     matchLabels:
-      environment: dc
-      location: asia-southeast1
+      environment: onpremise
+      location: cloudaz
