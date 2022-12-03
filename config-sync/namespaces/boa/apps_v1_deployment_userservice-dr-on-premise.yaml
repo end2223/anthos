@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: onpremise-cluster
+    configmanagement.gke.io/cluster-selector: op-practice
   name: userservice-dr-on-aws
   namespace: boa
 spec:

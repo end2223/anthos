@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: onpremise-cluster
+    # trien khai tren op-practice
+    configmanagement.gke.io/cluster-selector: op-practice
   name: balancereader-dr-on-aws
   namespace: boa
 spec:

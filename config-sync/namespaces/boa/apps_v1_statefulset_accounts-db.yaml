@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: gke-cluster
+    # chi trien khai tren gke
+    configmanagement.gke.io/cluster-selector: gke-practice
   labels:
     app: accounts-db
     tier: db

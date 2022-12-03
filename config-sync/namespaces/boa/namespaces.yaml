@@ -4,5 +4,6 @@ metadata:
   labels:
     #istio.io/rev: asm-1131-1
     kubernetes.io/metadata.name: boa
+    # ennable istio for ns
     istio-injection: enabled
   name: boa

@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: StatefulSet
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: gke-cluster
+    configmanagement.gke.io/cluster-selector: gke-practice
   name: ledger-db
   namespace: boa
 spec:
