@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: gke-cluster
+    configmanagement.gke.io/cluster-selector: gke-practice
   name: loadgenerator-dc-on-gcp
   namespace: boa
 spec:

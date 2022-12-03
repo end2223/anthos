@@ -2,7 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   annotations:
-    configmanagement.gke.io/cluster-selector: gke-cluster
+    # doi ten thanh cluster muon trien khai
+    configmanagement.gke.io/cluster-selector: gke-practice
   name: balancereader-dc-on-gcp
   namespace: boa
 spec:
